@@ -70,7 +70,7 @@ L["spell_410074"] = "The Underrot" --地渊孢林
 L["spell_424167"] = "Waycrest Manor" --维克雷斯庄园
 
 L["spell_424153"] = "Black Rook Hold" --黑鸦堡垒
-L["spell_393766"] = "Court of Stars" --群星挺远
+L["spell_393766"] = "Court of Stars" --群星庭院
 L["spell_424163"] = "Darkheart Thicket" --黑心林地
 L["spell_393764"] = "Halls of Valor" --英灵殿
 L["spell_373262"] = "Karazhan" --卡拉赞

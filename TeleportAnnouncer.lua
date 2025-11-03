@@ -3,8 +3,9 @@ local ADDON_NAME, TeleportAnnouncer = ...
 TeleportAnnouncer.Locale = {}
 local L = TeleportAnnouncer.Locale
 
-local GetSpellInfo, GetSpellLink = C_Spell.GetSpellInfo, C_Spell.GetSpellLink
-local GetItemInfo = C_Item.GetItemInfo
+local C_Spell_GetSpellInfo, C_Spell_GetSpellLink = C_Spell.GetSpellInfo, C_Spell.GetSpellLink
+local C_Item_GetItemInfo = C_Item.GetItemInfo
+local C_ChatInfo_SendChatMessage = C_ChatInfo.SendChatMessage
 local IsInGroup, UnitInRaid, UnitInParty, UnitInBattleground, IsPartyLFG = IsInGroup, UnitInRaid, UnitInParty, UnitInBattleground, IsPartyLFG
 
 local function getConfigByKey(key, default)
@@ -27,7 +28,7 @@ local function sendMessage(message)
     end
     -- print(message, channel)
     if channel then
-        SendChatMessage(message, channel)
+        C_ChatInfo_SendChatMessage(message, channel)
     end
 end
 
@@ -56,7 +57,7 @@ function TeleportAnnouncer:announceSpell(spellID, isSucceeded)
     local messageTemplateUse = announceTiming == 1 and L["UsingAndHeadingTo"] or L["UsedAndArrivedAt"]
     local messageTemplateCast = announceTiming == 1 and L["CastingAndHeadingTo"] or L["CastAndArrivedAt"]
     if isSucceeded and announceTiming == 1 then
-        local spellInfo = GetSpellInfo(spellID)
+        local spellInfo = C_Spell_GetSpellInfo(spellID)
         if not spellInfo then return end
         if spellInfo.castTime ~= 0 then return end
         messageTemplateUse = L["UsedAndArrivedAt"]
@@ -69,13 +70,13 @@ function TeleportAnnouncer:announceSpell(spellID, isSucceeded)
         if TeleportAnnouncer.teleportItems[spellID] then
             message = string.format(messageTemplateUse, TeleportAnnouncer.teleportItems[spellID], destination)
         elseif teleportData.item then
-            local _, itemLink = GetItemInfo(teleportData.item)
+            local _, itemLink = C_Item_GetItemInfo(teleportData.item)
             itemLink = itemLink or L["UnknownItem"]
             message = string.format(messageTemplateUse, itemLink, destination)
         end
     end
     if not message then
-        local spellLink = GetSpellLink(spellID) or L["UnknownSpell"]
+        local spellLink = C_Spell_GetSpellLink(spellID) or L["UnknownSpell"]
         message = string.format(messageTemplateCast, spellLink, destination)
     end
     sendMessage(message)
