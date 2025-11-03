@@ -1,5 +1,5 @@
-## Interface: 110107, 110200
-## Version: 1.7.1
+## Interface: 110205, 110207
+## Version: 1.7.2
 
 ## Title: Teleport Announcer
 ## Title-zhCN: |cff6c946cT|r|cff649773e|r|cff5c997al|r|cff549c81e|r|cff4c9f88p|r|cff44a290o|r|cff3ba497r|r|cff33a79et|r|cff2baaa5A|r|cff23acacn|r|cff1bafb3n|r|cff22adado|r|cff2aaaa6u|r|cff31a8a0n|r|cff38a599c|r|cff40a393e|r|cff47a08cr|r|cff4f9e86 |r|cff569b7f传|r|cff5d9979送|r|cff659672通|r|cff6c946c报|r
