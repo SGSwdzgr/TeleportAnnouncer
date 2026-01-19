@@ -3,6 +3,15 @@ local ADDON_NAME, TeleportAnnouncer = ...
 local L = TeleportAnnouncer.Locale
 
 TeleportAnnouncer.teleportSpells = {
+    --至暗之夜
+    [1254572] = {keystone = true},
+    [1254559] = {keystone = true},
+    [1254563] = {keystone = true},
+    [1254400] = {keystone = true},
+    [1254555] = {keystone = true},
+    [1254551] = {keystone = true},
+    [1254557] = {keystone = true},
+
     --地心之战
     [445417] = {keystone = true},
     [445440] = {keystone = true},
