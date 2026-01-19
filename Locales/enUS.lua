@@ -28,6 +28,14 @@ L["CastAndArrivedAt"] = "Cast %s, arrived at: %s"
 L["UnknownSpell"] = "Unknown spell"
 L["UnknownItem"] = "Unknown item"
 
+L["spell_1254572"] = "Magisters' Terrace"
+L["spell_1254559"] = "Maisara Caverns"
+L["spell_1254563"] = "Nexus-Point Xenas"
+L["spell_1254400"] = "Windrunner Spire"
+L["spell_1254555"] = "Pit of Saron"
+L["spell_1254551"] = "Seat of the Triumvirate"
+L["spell_1254557"] = "Skyreach"
+
 L["spell_445417"] = "Ara-Kara" --艾拉-卡拉，回响之城
 L["spell_445440"] = "Cinderbrew Meadery" --燧酿酒庄
 L["spell_445416"] = "City of Threads" --千丝之城
