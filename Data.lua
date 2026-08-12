@@ -11,6 +11,13 @@ TeleportAnnouncer.teleportSpells = {
     [1254555] = {keystone = true},
     [1254551] = {keystone = true},
     [1254557] = {keystone = true},
+    [1286812] = {keystone = true},
+    [1286807] = {keystone = true},
+    [1286831] = {keystone = true},
+    [1286809] = {keystone = true},
+    [1286828] = {keystone = true},
+    [1286801] = {keystone = true},
+    [1286804] = {keystone = true},
 
     --地心之战
     [445417] = {keystone = true},

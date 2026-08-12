@@ -36,6 +36,14 @@ L["spell_1254555"] = "Pit of Saron"
 L["spell_1254551"] = "Seat of the Triumvirate"
 L["spell_1254557"] = "Skyreach"
 
+L["spell_1286812"] = "Altar of Fangs"
+L["spell_1286807"] = "Den of Nalorakk"
+L["spell_1286831"] = "King’s Rest"
+L["spell_1286809"] = "Murder Row"
+L["spell_1286828"] = "Temple of Sethraliss"
+L["spell_1286801"] = "The Blinding Vale"
+L["spell_1286804"] = "Voidscar Arena"
+
 L["spell_445417"] = "Ara-Kara" --艾拉-卡拉，回响之城
 L["spell_445440"] = "Cinderbrew Meadery" --燧酿酒庄
 L["spell_445416"] = "City of Threads" --千丝之城
